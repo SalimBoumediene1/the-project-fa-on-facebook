@@ -4,7 +4,6 @@ class GossipController < ApplicationController
     def show
         puts "show"
         @user_id = session[:current_user_id]
-        @gossips = Gossip.all
         
     end
 
@@ -22,4 +21,5 @@ class GossipController < ApplicationController
         @gossip.save
         redirect_to gossip_path(session[:current_user_id])
     end
+
 end
