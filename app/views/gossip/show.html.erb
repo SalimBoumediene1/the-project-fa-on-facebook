@@ -5,4 +5,10 @@
     <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
     data-method="DELETE">Supprimmer</a>
 </p>
+<%= @gossips.each do |gossip|%>
+    <% if session[:current_user_id] %>
+        <%= gossip.title %>
+        <%= gossip.content %>
+        <%end%>
+<% end %>
 </div>

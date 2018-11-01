@@ -3,7 +3,8 @@ class GossipController < ApplicationController
 
     def show
         puts "show"
-        puts session[:current_user_id]
+        @user_id = session[:current_user_id]
+        @gossips = Gossip.all
         
     end
 
@@ -19,5 +20,6 @@ class GossipController < ApplicationController
         @gossip.content = params[:content]
         @gossip.user = User.find(session[:current_user_id])
         @gossip.save
+        redirect_to gossip_path(session[:current_user_id])
     end
 end
