@@ -1,13 +1,10 @@
-<%= form_tag('/registrations') do %>
+<%= form_tag do %>
             <h3 class ="mb-5">please subscribe</h3>
             <div class="row">
             <%= hidden_field_tag 'token'%>
             <div class="col-md-6">
                 <div class="form-group">
-                    <%= text_field_tag [:name], nil, placeholder: 'Your name', class: 'form-control'%>
-                </div>
-                <div class="form-group">
-                    <%= email_field_tag [:email], nil, placeholder: 'title', class: 'form-control' %>
+                    <%= email_field_tag [:email], nil, placeholder: 'email', class: 'form-control' %>
                 </div>
 				<div class="form-group">
                     <%= password_field_tag [:password] , nil, placeholder: 'password', class: 'form-control'%>
