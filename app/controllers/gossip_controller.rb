@@ -1,5 +1,5 @@
-require 'registrations_controller'
 class GossipController < ApplicationController
+    
     def index
         puts "index"
         @gossips = Gossip.all
@@ -14,7 +14,7 @@ class GossipController < ApplicationController
 
     def new
     puts "new"
-      @gossip = Gossip.find(session[:current_user_id])
+      @gossip = Gossip.find_by(user: session[:current_user_id])
     end
 
     def create

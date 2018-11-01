@@ -12813,3 +12813,1462 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/like/new" for 127.0.0.1 at 2018-11-01 20:56:57 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for LikeController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/like/new" for 127.0.0.1 at 2018-11-01 20:57:54 +0100
+Processing by LikeController#new as HTML
+Completed 406 Not Acceptable in 29ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionController::UnknownFormat (LikeController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/gossip" for 127.0.0.1 at 2018-11-01 21:08:29 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 38.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:08:32 +0100
+  
+ActionController::RoutingError (uninitialized constant CommentController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:09:07 +0100
+  
+ActionController::RoutingError (uninitialized constant CommentController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:09:09 +0100
+  
+ActionController::RoutingError (uninitialized constant CommentController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/gossip" for 127.0.0.1 at 2018-11-01 21:09:13 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (247.4ms)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_commentaire_path' for #<#<Class:0x00007f7c748b0888>:0x00007f7c708da880>
+Did you mean?  new_comment_path):
+     7:         <a href="<% gossip_index_path %>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
+     8:         data-method="DELETE">Supprimmer</a>
+     9:         <%= link_to "Like !", new_like_path, class: "btn btn-lg btn-primary" %><br>
+    10:         <%= link_to "comment !", new_commentaire_path, class: "btn btn-lg btn-primary" %><br>
+    11:         </div>
+    12:         </div>
+    13: <% end %>
+  
+app/views/gossip/index.html.erb:10:in `block in _app_views_gossip_index_html_erb___2136451621920373520_70086220503520'
+app/views/gossip/index.html.erb:1:in `_app_views_gossip_index_html_erb___2136451621920373520_70086220503520'
+Started GET "/gossip" for 127.0.0.1 at 2018-11-01 21:10:21 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (224.2ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 4.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_commentaire_path' for #<#<Class:0x000055ba787b78b0>:0x000055ba781bf1d8>
+Did you mean?  new_comment_path):
+     7:         <a href="<% gossip_index_path %>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
+     8:         data-method="DELETE">Supprimmer</a>
+     9:         <%= link_to "Like !", new_like_path, class: "btn btn-lg btn-primary" %><br>
+    10:         <%= link_to "comment !", new_commentaire_path, class: "btn btn-lg btn-primary" %><br>
+    11:         </div>
+    12:         </div>
+    13: <% end %>
+  
+app/views/gossip/index.html.erb:10:in `block in _app_views_gossip_index_html_erb___2136451621920373520_47129686903160'
+app/views/gossip/index.html.erb:1:in `_app_views_gossip_index_html_erb___2136451621920373520_47129686903160'
+Started GET "/gossip" for 127.0.0.1 at 2018-11-01 21:10:37 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:10:39 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for CommentController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:13:11 +0100
+Processing by CommentController#new as HTML
+Completed 406 Not Acceptable in 28ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionController::UnknownFormat (CommentController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:13:31 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @gossips.each do |gossip| %>
+    2:         <div class="card row col-md-3 mb-4 mr-3" style="width: 18rem;">
+    3:         <div class="card-body">
+    4:         <p><%= gossip.title %></p>
+  
+app/views/comment/new.html.erb:1:in `_app_views_comment_new_html_erb__4419359816196572727_70086255833040'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:13:34 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @gossips.each do |gossip| %>
+    2:         <div class="card row col-md-3 mb-4 mr-3" style="width: 18rem;">
+    3:         <div class="card-body">
+    4:         <p><%= gossip.title %></p>
+  
+app/views/comment/new.html.erb:1:in `_app_views_comment_new_html_erb__4419359816196572727_70086182511860'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:14:14 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:45:45 +0100
+Processing by CommentController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant CommentController::Comment):
+  
+app/controllers/comment_controller.rb:9:in `new'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:46:30 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 49.4ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:46:53 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IwnjeKTLngIqGM0wZ6Y7hrPsKNAL3rJkR0HWpz0TEcKAnnWE74iQB2VVTzrPtP+LhLAu7r1BCFRXTTG6r0XWhQ==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:48:01 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 53ms (Views: 37.0ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:48:05 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"459pGWBzfOIy65L5ZWciO4vBIkOcHioorc263fT2PIFACP/lKzBy532mEPPNdeY2vJ0kfSqBkBi9wV3AZqD7xg==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:48:51 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:48:53 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"smGu4D/uKAVPf3U5OpJU/iKFVUK6nz35rInZ6j7tH/YR9jgcdK0mAAAy9zOSgJDzFdlTfAwAh8m8hT73rLvYsQ==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:51:34 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 39.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:51:37 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:51:41 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YqwkZ1OgtMZRtI8E63Mdmz1YO9zoPHW75USnptb1rpbBO7KbGOO6wx75DQ5DYdmWCgQ94l6jz4v1SEC7RKNp0Q==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:52:03 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:52:04 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IuMleof39A7+dxmzY2Ty95kkUrI97MTmAMWVNEqmqA2BdLOGzLT6C7E6m7nLdjb6rnhUjItzftYQyXIp2PBvSg==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:52:56 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:56:29 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:56:30 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZUfJKRlcQGdqpQHFbio5gCIENDg9kP7sOdDdMUCdNSWAonY7yZ/BNLnFg29qmzrN9QW7lZp+cug66RpV1Szkw==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 83ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 21:58:51 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2018-11-01 21:58:54 +0100
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/4r72RhXtvpYbxeVlEVLmdjx6mIEpT4fUGYNcVcZH/dcHW0lUxS4/xcilZ88V4+U763sXLI6hC9AaupsxU/YsA==", "token"=>"", "content"=>"", "commit"=>"Commenter"}
+No template found for CommentController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 21:59:26 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  Rendered registrations/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 21:59:28 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 48.1ms | ActiveRecord: 9.8ms)
+
+
+Started POST "/registrations" for 127.0.0.1 at 2018-11-01 21:59:38 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TdZBAKnpPIdGRVkxVEEeW60yp5Clz+DH3v8tTW7rjP5HCBpXfyVRygNgPI7B9XGwYpjG87/R2bGNXqqgX5nUcg==", "token"=>"", "name"=>"s", "email"=>"s@s.s", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[36mUser Create (4.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "s"], ["email", "s@s.s"], ["password", "s"], ["created_at", "2018-11-01 20:59:38.721527"], ["updated_at", "2018-11-01 20:59:38.721527"]]
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:16
+Redirected to http://localhost:3000/gossip/7
+Completed 302 Found in 20ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/gossip/7" for 127.0.0.1 at 2018-11-01 21:59:38 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 21:59:42 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 21:59:44 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 55ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 21:59:45 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 21:59:55 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cbosw0tDcjYToJUuRwSPSiM0z9tls9ZjHuQzUXxBRtjqbvIaMTiU3OzfRJoSqmYOV+D3xfOrG6u6jzzS0jr2eQ==", "token"=>"", "email"=>"s@s.s", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s@s.s"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "s"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/2
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 21:59:55 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:00:01 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cbosw0tDcjYToJUuRwSPSiM0z9tls9ZjHuQzUXxBRtjqbvIaMTiU3OzfRJoSqmYOV+D3xfOrG6u6jzzS0jr2eQ==", "token"=>"", "email"=>"s@s.s", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s@s.s"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "ss"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/2
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 22:00:01 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:00:06 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cbosw0tDcjYToJUuRwSPSiM0z9tls9ZjHuQzUXxBRtjqbvIaMTiU3OzfRJoSqmYOV+D3xfOrG6u6jzzS0jr2eQ==", "token"=>"", "email"=>"s@s.s", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "s@s.s"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "s"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/2
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 22:00:06 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 22:01:28 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/registrations" for 127.0.0.1 at 2018-11-01 22:01:37 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3A74GelKGEBs0zIkd2750aZH9inrnWvX73GanxCvs3nW0KNOP4Z1DSn2V5vi2pY6ae2XSvGDUqG80B1yId3r9Q==", "token"=>"", "name"=>"e", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[36mUser Create (5.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "e"], ["email", "e@e.e"], ["password", "e"], ["created_at", "2018-11-01 21:01:37.860231"], ["updated_at", "2018-11-01 21:01:37.860231"]]
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:16
+Redirected to http://localhost:3000/gossip/8
+Completed 302 Found in 31ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/gossip/8" for 127.0.0.1 at 2018-11-01 22:01:37 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"8"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:01:39 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:01:45 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O80S+8yOGny9oeWzLX7W7YIrgy/BKb0Bq3OROIOh6hnYGcwitvX8lkLeNAd40D+p9v+7MVcxcMkPGJ67LdpauA==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "eee"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/8
+Completed 302 Found in 18ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/gossip/8" for 127.0.0.1 at 2018-11-01 22:01:45 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"8"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:02:53 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:03:03 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3aJMUe/KEn8p7LezXPZQTfRU/7BuaBt8HJ3GiI3uycN+NdqtpIkcemahNbn05JRAwwj5jtj3oUwMkSGVH7gOhA==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "eeeee"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/login
+Completed 302 Found in 63ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:03:03 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:03:16 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mb0X4EVGnhaQx1/4zu2zbyKfrpoKT12Vg6EKeuQLUMGSKoEcDgWQE9+K3fJm/3diFcOopLzQ56WTre1ndl2Xhg==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/login
+Completed 302 Found in 28ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:03:16 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 96ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:03:52 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:03:59 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xbr+ZbqKgE/lo+chwsoGcA+WTPBDTO1j+96E3P4jeUH+LWiZ8cmOSqruZStq2MJ9OMpKzvXTV1Pr0mPBbHW+Bg==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 123ms (ActiveRecord: 23.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:03:59 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:04:47 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:04:56 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a4wIysRlnp8KqOhyb4kjbhIpIs73fiadmQfIJ3J3eAfIG542jyaQmkXlanjHm+djJXUk8EHhnK2JCy864CG/QA==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/gossip/8
+Completed 302 Found in 56ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/gossip/8" for 127.0.0.1 at 2018-11-01 22:04:56 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"8"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 67ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:06:14 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 146ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:06:20 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VLFpaPsvVG+2ZDGg57nhcZ9mR2vu8Jt7xSa6HbA2Ebz3Jv+UsGxaavkps6pPqyV8qDpBVVhvIUvVKl0AImDW+w==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 109ms (ActiveRecord: 24.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:06:20 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:06:52 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 100ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:06:59 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36Yr7E2VDMg2MFXVtSzR40t9nDjs62JGFxRLD7obfDV8Mb0QBtYCzXl9198dPhXufCGaBlp02HYHGKwSKE27cg==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:29
+Redirected to http://localhost:3000/login
+Completed 302 Found in 80ms (ActiveRecord: 20.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:06:59 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 135ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:09:31 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 49ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:09:37 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOx+NijFdxrnObveX8nG2VECnoDMKpPWQsHbXQPvM1bbe+jKY4Z5H6h0OdT32wLUZl6Yvnq1KeZSzTxAkbn0EQ==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:29
+Redirected to http://localhost:3000/login
+Completed 302 Found in 64ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:09:37 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:10:04 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:10:10 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AuXUZVNiGw72PEhCRCQ+dw8180eB2sr7Cdq594nfo7OhckKZGCEVC7lxykjsNvp6OGn1eTdFcMsZ1l7qG4lk9A==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:29
+Redirected to http://localhost:3000/login
+Completed 302 Found in 81ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:10:10 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:12:03 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 103ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:12:15 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:13:35 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cuuKyFV3kJNU4TEsnsbqut8GFzR96p9FXoQH9uBzw5jRfBw0HjSelhussyY21C636FoRCst1JXVOiODrciUE3w==", "token"=>"", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", ""], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 122ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:13:36 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:14:00 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:14:02 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rbdn3bp6wcyor20fqTKBi0vWQ9qqNAXL2IJiNJTngV7mIPEh8TnPyefi7xUBIEWGfIpF5Byrv/vIjoUpBrFGGQ==", "token"=>"", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", ""], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 34ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:14:02 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:16:44 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 131ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:16:54 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVSqRD7dl09JWcfOuiYzazXQfmroVMZnBPg2CLVjpIaSwzy4dZ6ZSgYURcQSNPdmAox4VF7LfFcU9NEVJzVjwQ==", "token"=>"", "email"=>"e@e.e", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "e@e.e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "e"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 27ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:16:54 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 164ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:20:58 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:21:04 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f7vxdWmESMjRWRtHmD6BdjQGFTeC/y6CZiVssC6VPOrcLGeJIsdGzZ4UmU0wLEV7A1oTCTRglLJ2KYutvMP7rQ==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:29
+Redirected to http://localhost:3000/login
+Completed 302 Found in 53ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:21:05 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:22:00 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+Completed 200 OK in 159ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:26:10 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 122ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:26:19 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UuhJmSvIRi5AiH2NasYifjiH23X1XwGiC4K7t0aK7FTxf99lYItIKw/F/4fC1OZzD9vdS0PAu5Ibjlyq1NwrEw==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/1
+Completed 302 Found in 227ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:26:19 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 77ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:37:24 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/salim/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+Completed 404 Not Found in 25ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:17:in `new'
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:37:40 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:17:in `new'
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:37:42 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 278ms (Views: 274.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/" for 127.0.0.1 at 2018-11-01 22:37:46 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:37:53 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (2.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+Completed 404 Not Found in 9ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:17:in `new'
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:37:57 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 22:38:00 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 22:38:05 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6vYJAYfAxbjfVrohv6+qM3a5XajKNsDa2hhCzSlbPVQJItfY/bsjUiApa5XqAUN3Am1ltlwuDRJ+c01OhyCN9Q==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/1
+Completed 302 Found in 37ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:38:05 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:38:06 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:17:in `new'
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:39:35 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 22:39:37 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:39:39 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (2.5ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+Completed 404 Not Found in 16ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:17:in `new'
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:41:02 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:18
+Completed 404 Not Found in 18ms (ActiveRecord: 9.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:18:in `new'
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:41:04 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:18
+Completed 404 Not Found in 8ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip with 'id'=1):
+  
+app/controllers/gossip_controller.rb:18:in `new'
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 22:41:40 +0100
+Processing by GossipController#new as HTML
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:17
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 23.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 22:41:49 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uiV2GMHOr7TL+3cVZ04ZEshGpdn5VtEq2vssukXJYCkZsuDkio2hsYS29R/PXN0f/xqj50/JaxrK98un15+nbg==", "token"=>"", "title"=>"ccc", "content"=>"cccccc", "commit"=>"Creer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossip_controller.rb:26
+  [1m[36mGossip Create (1.6ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ccc"], ["content", "cccccc"], ["user_id", 1], ["created_at", "2018-11-01 21:41:49.975539"], ["updated_at", "2018-11-01 21:41:49.975539"]]
+  ↳ app/controllers/gossip_controller.rb:26
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossip_controller.rb:26
+Redirected to http://localhost:3000/gossip
+Completed 302 Found in 46ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/gossip" for 127.0.0.1 at 2018-11-01 22:41:49 +0100
+Processing by GossipController#index as HTML
+  Rendering gossip/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/index.html.erb:1
+  Rendered gossip/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/gossip" for 127.0.0.1 at 2018-11-01 22:43:50 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/gossip"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comment/new" for 127.0.0.1 at 2018-11-01 22:44:42 +0100
+Processing by CommentController#new as HTML
+  Rendering comment/new.html.erb within layouts/application
+  Rendered comment/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 25.7ms | ActiveRecord: 1.9ms)
+
+
