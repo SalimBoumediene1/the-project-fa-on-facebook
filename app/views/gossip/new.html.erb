@@ -1,0 +1,17 @@
+<%= form_tag('/gossip') do %>
+            <h3 class ="mb-5">please subscribe</h3>
+            <div class="row">
+            <%= hidden_field_tag 'token'%>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <%= text_field_tag [:title], nil, placeholder: 'title', class: 'form-control'%>
+                </div>
+                <div class="form-group">
+                    <%= text_area_tag [:content], nil, placeholder: 'content', class: 'form-control' %>
+                </div>
+				<div class="form-group center">
+                    <div><%= submit_tag 'Creer' , class: "btn btn-primary mb-5"%>
+                <div>
+                </div>
+            </div>
+        <% end %>

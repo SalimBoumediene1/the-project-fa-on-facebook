@@ -14,7 +14,8 @@ class RegistrationsController < ApplicationController
         @user.email = params[:email]
         @user.password = params[:password]
         @user.save
-        redirect_to('/')
+        session[:current_user_id]
+        redirect_to(gossip_path(@user.id))
     end
 
     def login
@@ -22,22 +23,15 @@ class RegistrationsController < ApplicationController
     end
 
     def connexion
-        puts params
         @user_email = User.find_by(email: params[:email])
         @user_password = User.find_by(password: params[:password])
-        if @user_email != params[:email] && @user_password != params[:password]
-            redirect_to login_path, alert: "Watch it, mister!"
+        if @user_email.email != params[:email] && @user_password.password != params[:password]
+            redirect_to login_path
         else
-            flash[:notice] = "Connexion reussi"
-            redirect_to registrations_path
+            session[:current_user_id]
+            redirect_to gossip_path(@user_email.id)
         end
 
     end
-        def new_gossip
-            @gossip = Gossip.new
-        end
-
-        def create_gossip
-
-        end
+        
 end
