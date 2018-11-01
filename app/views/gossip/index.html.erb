@@ -1,0 +1,13 @@
+<% @gossips.each do |gossip| %>
+        <div class="card row col-md-3 mb-4 mr-3" style="width: 18rem;">
+        <div class="card-body">
+        <p><%= gossip.title %></p>
+        <h4>Content :</h4>
+        <p><%= gossip.content %></p>
+        <a href="<% gossip_index_path %>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
+        data-method="DELETE">Supprimmer</a>
+        <%= link_to "Like !", new_like_path, class: "btn btn-lg btn-primary" %><br>
+        <%= link_to "comment !", new_comment_path, class: "btn btn-lg btn-primary" %><br>
+        </div>
+        </div>
+<% end %>

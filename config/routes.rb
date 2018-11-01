@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   post '/login', to: 'registrations#connexion'
   resources :registrations
   resources :gossip
+  resources :like
+  resources :comment
 end

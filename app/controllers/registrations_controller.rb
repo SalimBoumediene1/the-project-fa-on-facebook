@@ -1,8 +1,7 @@
 class RegistrationsController < ApplicationController
 
     def index
-    puts "index"
-    @gossips = Gossip.all
+        @gossips = Gossip.all
     end
 
     def new
@@ -15,7 +14,6 @@ class RegistrationsController < ApplicationController
         @user.email = params[:email]
         @user.password = params[:password]
         @user.save
-        @user.id = session[:current_user_id]
         redirect_to(gossip_path(@user.id))
     end
 
@@ -29,9 +27,9 @@ class RegistrationsController < ApplicationController
         if @user_email.email != params[:email] && @user_password.password != params[:password]
             redirect_to login_path
         else
-            redirect_to gossip_path(session[:current_user_id])
+            session[:current_user_id]
+            redirect_to gossip_path(@user_email.id)
         end
 
     end
-        
 end
