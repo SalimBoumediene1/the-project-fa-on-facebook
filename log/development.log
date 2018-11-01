@@ -7729,3 +7729,726 @@ Processing by RegistrationsController#index as HTML
 Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:39:43 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 30.7ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:39:55 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"adZcS1sg6cFyedu3PPUb+hE4Bp3l7yQ5oGDJQc7MnIr48Kh6JJL/DgZLZqK8CuqcAF+h24XWYpR7xWP1DMFT2w==", "token"=>"", "title"=>"aaa", "content"=>"aaa", "commit"=>"Creer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 16ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:40:13 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"adZcS1sg6cFyedu3PPUb+hE4Bp3l7yQ5oGDJQc7MnIr48Kh6JJL/DgZLZqK8CuqcAF+h24XWYpR7xWP1DMFT2w==", "token"=>"", "title"=>"aaa", "content"=>"aaa", "commit"=>"Creer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started GET "/login" for 127.0.0.1 at 2018-11-01 16:40:20 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 16:40:25 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5rV8AYupaodaeYLZCvJcS5cCdiyOjXctZ/MAE777KbUFYaLY8dKMbaUGU21fXLUP49ZOMhiVuuXDmA+QEICZFA==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/1
+Completed 302 Found in 18ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 16:40:25 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  Rendered gossip/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:40:28 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:40:35 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLrCMAOd8O67cxHNPU4+64MoSGxxd9Wmr6Lyd/Ecs6wpnDYBfC/mIc9BrNi9sc+Nkk/vKhFOkwt0B1jDMxF8/Q==", "token"=>"", "title"=>"aaa", "content"=>"aaaa", "commit"=>"Creer"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:42:27 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLrCMAOd8O67cxHNPU4+64MoSGxxd9Wmr6Lyd/Ecs6wpnDYBfC/mIc9BrNi9sc+Nkk/vKhFOkwt0B1jDMxF8/Q==", "token"=>"", "title"=>"aaa", "content"=>"aaaa", "commit"=>"Creer"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started GET "/" for 127.0.0.1 at 2018-11-01 16:42:40 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  Rendered registrations/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 16:42:41 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 16:42:47 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UCe7eCfPBpYywf8JzZllJeKZbHUmji17wzwcuFbNZ8Gz82WhXbTgfM2+Lr2YN4xhlk1Ua7CW4LNnVxM7+LbXYA==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+Redirected to http://localhost:3000/gossip/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 16:42:47 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  Rendered gossip/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:42:49 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:42:54 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m7/mCHUKf2ddtj+IabpnXRg8XYx14la7I6Kb9bKabj4KmRI5CrhpqCmEgp3pRZY7CVv6yhXbEBb4BzFBcJehbw==", "token"=>"", "title"=>"a", "content"=>"a", "commit"=>"Creer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:45:00 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 18.0ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:45:07 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xfh1K+Y7TG0s+dobhmw4BwCNW2DTTZPYtTXZIFdnG73M3oEamYlaoljLZw4Gk8lhEer8JrN01XVukHOUlWrU7A==", "token"=>"", "title"=>"aaa", "content"=>"aaa", "commit"=>"Creer"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 30ms (ActiveRecord: 12.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:45:33 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xfh1K+Y7TG0s+dobhmw4BwCNW2DTTZPYtTXZIFdnG73M3oEamYlaoljLZw4Gk8lhEer8JrN01XVukHOUlWrU7A==", "token"=>"", "title"=>"aaa", "content"=>"aaa", "commit"=>"Creer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started GET "/" for 127.0.0.1 at 2018-11-01 16:45:56 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  Rendered registrations/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 16:45:58 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/registrations" for 127.0.0.1 at 2018-11-01 16:46:09 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r2+0z8tq8Trl8Wn4bpLCwqEgzOxxhLLFqo6E+K7f7Jqlse+YHaacd6DUDEf7Jq0pboqtj2uai7P5LwMVn620Fg==", "token"=>"", "name"=>"s", "email"=>"s@s.s", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[36mUser Create (3.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "s"], ["email", "s@s.s"], ["password", "s"], ["created_at", "2018-11-01 15:46:09.231633"], ["updated_at", "2018-11-01 15:46:09.231633"]]
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:16
+Redirected to http://localhost:3000/gossip/2
+Completed 302 Found in 20ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 16:46:09 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  Rendered gossip/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:46:10 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:46:15 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVbtOJg2ZiFhKKSPVk0j3lLIcLem5QQEb6EDbFnCRs2gcBkJ54Rw7hUaGZrWstK4Q6/X8cbcQqm0BKnYm8+JnA==", "token"=>"", "title"=>"s", "content"=>"s", "commit"=>"Creer"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:47:28 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVbtOJg2ZiFhKKSPVk0j3lLIcLem5QQEb6EDbFnCRs2gcBkJ54Rw7hUaGZrWstK4Q6/X8cbcQqm0BKnYm8+JnA==", "token"=>"", "title"=>"s", "content"=>"s", "commit"=>"Creer"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:47:32 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVbtOJg2ZiFhKKSPVk0j3lLIcLem5QQEb6EDbFnCRs2gcBkJ54Rw7hUaGZrWstK4Q6/X8cbcQqm0BKnYm8+JnA==", "token"=>"", "title"=>"s", "content"=>"s", "commit"=>"Creer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:48:02 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVbtOJg2ZiFhKKSPVk0j3lLIcLem5QQEb6EDbFnCRs2gcBkJ54Rw7hUaGZrWstK4Q6/X8cbcQqm0BKnYm8+JnA==", "token"=>"", "title"=>"s", "content"=>"s", "commit"=>"Creer"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+Completed 404 Not Found in 13ms (ActiveRecord: 4.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/gossip_controller.rb:20:in `create'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 16:48:17 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/registrations" for 127.0.0.1 at 2018-11-01 16:48:29 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LJ9LLakidxqfeJbw58GwBKcjxhETD50t++zDJ7pJSsgmQRB6f+4aV9pd809ydd/vaImncgkRpFuoTUTKizsSRA==", "token"=>"", "name"=>"v", "email"=>"v@v.v", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "v"], ["email", "v@v.v"], ["password", "v"], ["created_at", "2018-11-01 15:48:29.819696"], ["updated_at", "2018-11-01 15:48:29.819696"]]
+  ↳ app/controllers/registrations_controller.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:16
+Redirected to http://localhost:3000/gossip/3
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 16:48:29 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  Rendered gossip/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 16:48:31 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 16:48:38 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J/vbTMLQGsQwnX4ZEDKYH1JjsJPMPnEtEAejnuNLzue23S99vWIMC0SvwwyQzWl5QwQX1awHN4DLogkqIUYBtg==", "token"=>"", "title"=>"v", "content"=>"v", "commit"=>"Creer"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossip_controller.rb:21
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "v"], ["content", "v"], ["user_id", 3], ["created_at", "2018-11-01 15:48:38.683550"], ["updated_at", "2018-11-01 15:48:38.683550"]]
+  ↳ app/controllers/gossip_controller.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossip_controller.rb:21
+Redirected to http://localhost:3000/gossip/3
+Completed 302 Found in 47ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 16:48:38 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 17:00:55 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 17:01:44 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:01:53 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossip/2" for 127.0.0.1 at 2018-11-01 17:01:59 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossip/1" for 127.0.0.1 at 2018-11-01 17:02:37 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossip/4" for 127.0.0.1 at 2018-11-01 17:02:40 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:02:45 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossip/show.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/gossip/show.html.erb:8
+  Rendered gossip/show.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:03:09 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:03:59 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:04:32 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  Rendered registrations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:06:28 +0100
+Processing by RegistrationsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationsController::Gossips):
+  
+app/controllers/registrations_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:06:47 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/registrations/index.html.erb:2
+  Rendered registrations/index.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 29.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:07:28 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"gossip"}, missing required keys: [:id]):
+    1: <%= @gossips.each do |gossip|%>
+    2:         <p><%= gossip.title %></p>
+    3:         <p><%= gossip.title %></p>
+    4:         <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?">
+    5: <% end %>
+  
+app/views/registrations/index.html.erb:4:in `block in _app_views_registrations_index_html_erb___3770400677043375330_70086328782640'
+app/views/registrations/index.html.erb:1:in `_app_views_registrations_index_html_erb___3770400677043375330_70086328782640'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:07:46 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"gossip"}, missing required keys: [:id]):
+    1: <%= @gossips.each do |gossip|%>
+    2:         <p><%= gossip.title %></p>
+    3:         <p><%= gossip.title %></p>
+    4:         <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
+    5:     data-method="DELETE">Supprimmer</a>
+    6: <% end %>
+  
+app/views/registrations/index.html.erb:4:in `block in _app_views_registrations_index_html_erb___3770400677043375330_70086327510300'
+app/views/registrations/index.html.erb:1:in `_app_views_registrations_index_html_erb___3770400677043375330_70086327510300'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:07:47 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"gossip"}, missing required keys: [:id]):
+    1: <%= @gossips.each do |gossip|%>
+    2:         <p><%= gossip.title %></p>
+    3:         <p><%= gossip.title %></p>
+    4:         <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
+    5:     data-method="DELETE">Supprimmer</a>
+    6: <% end %>
+  
+app/views/registrations/index.html.erb:4:in `block in _app_views_registrations_index_html_erb___3770400677043375330_70086326230740'
+app/views/registrations/index.html.erb:1:in `_app_views_registrations_index_html_erb___3770400677043375330_70086326230740'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:08:18 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-01 17:08:53 +0100
+Processing by RegistrationsController#login as HTML
+  Rendering registrations/login.html.erb within layouts/application
+  Rendered registrations/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-11-01 17:09:06 +0100
+Processing by RegistrationsController#connexion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vc0+QZieMRCZosPE3B+9jJiXhbVaeHKvGiCvkgI5BiS2GeCY4uXX+mbdEnCJsVTI7EO9q8xgv2e+S6ARrEK2hQ==", "token"=>"", "email"=>"a@a.a", "password"=>"[FILTERED]", "commit"=>"Save"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:27
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:28
+Redirected to http://localhost:3000/gossip/3
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:09:06 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossip/new" for 127.0.0.1 at 2018-11-01 17:09:09 +0100
+Processing by GossipController#new as HTML
+  Rendering gossip/new.html.erb within layouts/application
+  Rendered gossip/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossip" for 127.0.0.1 at 2018-11-01 17:09:13 +0100
+Processing by GossipController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7w347nVnYrEwEzcwfCwLgPOKsN10mBRWSkB3ooYPvxN+KwzfCtV0fkQhiiX80/rm4u0XmxShUvuR5d0WRAJwQg==", "token"=>"", "title"=>"d", "content"=>"d", "commit"=>"Creer"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossip_controller.rb:20
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossip_controller.rb:21
+  [1m[36mGossip Create (3.7ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "d"], ["content", "d"], ["user_id", 3], ["created_at", "2018-11-01 16:09:13.418642"], ["updated_at", "2018-11-01 16:09:13.418642"]]
+  ↳ app/controllers/gossip_controller.rb:21
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossip_controller.rb:21
+Redirected to http://localhost:3000/gossip/3
+Completed 302 Found in 24ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/gossip/3" for 127.0.0.1 at 2018-11-01 17:09:13 +0100
+Processing by GossipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering gossip/show.html.erb within layouts/application
+  Rendered gossip/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:09:15 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/" for 127.0.0.1 at 2018-11-01 17:09:30 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:10:00 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  Rendered registrations/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/salim/THP/semaine05/day24/the-project-fa-on-facebook/app/views/registrations/index.html.erb:6: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );
+...                            ^~~
+/home/salim/THP/semaine05/day24/the-project-fa-on-facebook/app/views/registrations/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/salim/THP/semaine05/day24/the-project-fa-on-facebook/app/views/registrations/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/registrations/index.html.erb:6: syntax error, unexpected keyword_end
+app/views/registrations/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/registrations/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:14:35 +0100
+Processing by RegistrationsController#index as HTML
+  Rendering registrations/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/registrations/index.html.erb:1
+  Rendered registrations/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/" for 127.0.0.1 at 2018-11-01 17:14:43 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'

@@ -2,13 +2,7 @@
 <%= link_to "Creer un gossip !", new_gossip_path, class: "btn btn-lg btn-primary" %><br>
     <h1>le contenu du gossip:</h1>
 <p>
-    <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="êtes-vous sur?"
-    data-method="DELETE">Supprimmer</a>
+    
 </p>
-<%= Gossip.all.each do |gossip|%>
-    <% if gossip.user == User.find(session[:current_user_id])%>
-        <p><%= gossip.title %></p>
-        <p><%= gossip.title %></p>
-    <% end %>
-<% end %>
+
 </div>
